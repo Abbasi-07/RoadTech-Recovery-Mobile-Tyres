@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoadTech Recovery & Mobile Tyres | 24/7 A9 & Highlands Emergency Roadside Service</title>
+  <meta name="description" content="24/7 Mobile Tyre Fitting & Emergency Breakdown Recovery along the A9, Dalwhinnie, Aviemore, Pitlochry, Inverness & Perthshire. Fast 30-45 min response call +44 7401 320 339.">
+  <meta name="keywords" content="Mobile Tyre Fitting Dalwhinnie, A9 Breakdown Recovery, Emergency Tyre Repair Highlands, 24/7 Towing Service Aviemore, Roadside Assistance Pitlochry, Mobile Tyre Replacement Inverness, Puncture Repair Drumochter Pass, Battery Jump Start Perthshire">
+
+  <style>
+    :root {
+      --primary: #d32f2f;
+      --primary-hover: #b71c1c;
+      --dark: #0b0f19;
+      --accent: #f59e0b;
+      --light-bg: #f8fafc;
+      --text-dark: #1e293b;
+      --text-light: #ffffff;
+      --glass-bg: rgba(15, 23, 42, 0.45);
+      --card-glass: rgba(255, 255, 255, 0.92);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; }
+    body { background-color: var(--light-bg); color: var(--text-dark); line-height: 1.6; }
+
+    /* Sticky Navigation Header */
+    header {
+      background: rgba(11, 15, 25, 0.95);
+      backdrop-filter: blur(8px);
+      color: var(--text-light);
+      padding: 15px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    .logo { font-size: 1.35rem; font-weight: 800; color: var(--text-light); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+    .logo span { color: var(--primary); }
+    .nav-phone {
+      background: var(--primary);
+      color: var(--text-light);
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+    .nav-phone:hover { background: var(--primary-hover); }
+
+    /* Hero Section - Optimized to Show hero-van.jpg Prominently */
+    .hero {
+      background: linear-gradient(rgba(11, 15, 25, 0.25), rgba(11, 15, 25, 0.45)), url('hero-van.jpg') center/cover no-repeat attachment;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    
+    /* Transparent Hero Content Box */
+    .hero-box {
+      background: var(--glass-bg);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 40px 30px;
+      border-radius: 16px;
+      max-width: 850px;
+      color: var(--text-light);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    .hero-box h1 { font-size: 2.6rem; font-weight: 900; margin-bottom: 15px; text-shadow: 2px 2px 8px rgba(0,0,0,0.8); line-height: 1.2; }
+    .hero-box p { font-size: 1.25rem; margin-bottom: 25px; text-shadow: 1px 1px 4px rgba(0,0,0,0.8); color: #f1f5f9; }
+    .cta-btn {
+      display: inline-block;
+      background: var(--primary);
+      color: var(--text-light);
+      padding: 16px 38px;
+      font-size: 1.25rem;
+      font-weight: 800;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(211, 47, 47, 0.5);
+      transition: all 0.3s ease;
+    }
+    .cta-btn:hover { background: var(--primary-hover); transform: translateY(-3px); }
+
+    /* Key Features / Badges Banner */
+    .features-bar {
+      background: var(--dark);
+      color: var(--text-light);
+      padding: 18px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      text-align: center;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .features-bar span { display: flex; align-items: center; gap: 8px; }
+
+    /* Main Container */
+    .container { max-width: 1150px; margin: 50px auto; padding: 0 20px; }
+    .section-title { text-align: center; font-size: 2.1rem; color: var(--dark); margin-bottom: 12px; font-weight: 800; }
+    .section-subtitle { text-align: center; color: #64748b; margin-bottom: 40px; font-size: 1.05rem; }
+
+    /* Grid Layouts */
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+    
+    .card {
+      background: var(--card-glass);
+      padding: 28px;
+      border-radius: 12px;
+      border-top: 5px solid var(--primary);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+      transition: transform 0.3s ease;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card h3 { font-size: 1.3rem; color: var(--dark); margin-bottom: 12px; }
+    .card p { color: #475569; font-size: 0.95rem; }
+
+    /* Area Tag Cloud for SEO Keywords */
+    .area-tags { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 20px; }
+    .area-tag { background: #e2e8f0; color: #1e293b; padding: 8px 14px; border-radius: 20px; font-size: 0.88rem; font-weight: 600; }
+
+    /* Urgent Emergency Call Banner */
+    .emergency-banner {
+      background: linear-gradient(135deg, var(--dark) 0%, #1e293b 100%);
+      color: var(--text-light);
+      text-align: center;
+      padding: 45px 25px;
+      border-radius: 16px;
+      margin: 60px 0;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    .emergency-banner h2 { font-size: 2.2rem; margin-bottom: 10px; font-weight: 800; }
+    .emergency-banner p { font-size: 1.15rem; color: #cbd5e1; margin-bottom: 25px; }
+
+    /* Footer Styling with Direct Address */
+    footer { background: var(--dark); color: #94a3b8; padding: 50px 20px 25px; margin-top: 70px; border-top: 3px solid var(--primary); }
+    .footer-content { max-width: 1150px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 35px; margin-bottom: 40px; }
+    .footer-col h4 { color: var(--text-light); font-size: 1.2rem; margin-bottom: 15px; font-weight: 700; }
+    .footer-col p, .footer-col a { color: #94a3b8; font-size: 0.95rem; text-decoration: none; display: block; margin-bottom: 8px; }
+    .footer-col a:hover { color: var(--text-light); }
+    .footer-bottom { text-align: center; padding-top: 25px; border-top: 1px solid #1e293b; font-size: 0.88rem; color: #64748b; }
+
+    @media (max-width: 768px) {
+      .hero-box h1 { font-size: 1.9rem; }
+      .hero-box p { font-size: 1.05rem; }
+      header { flex-direction: column; gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Top Header Navigation -->
+  <header>
+    <a href="index.html" class="logo">🛞 <span>RoadTech</span> Recovery & Tyres</a>
+    <a href="tel:+447401320339" class="nav-phone">📞 Call 24/7: +44 7401 320 339</a>
+  </header>
+
+  <!-- Hero Banner (Semi-Transparent Overlay to Highlight hero-van.jpg) -->
+  <section class="hero">
+    <div class="hero-box">
+      <h1>RoadTech Recovery & Mobile Tyres Dalwhinnie</h1>
+      <p>24/7 Emergency Breakdown Recovery & Mobile Tyre Fitting across the A9 Corridor, Highlands & Perthshire (Within 1.5 Hour Radius)</p>
+      <a href="tel:+447401320339" class="cta-btn">🚨 Call Now: +44 7401 320 339</a>
+    </div>
+  </section>
+
+  <!-- Quick Info Bar -->
+  <div class="features-bar">
+    <span>⏱️ 30–45 Min Average A9 Arrival</span>
+    <span>🔧 REACT Trained Mobile Technicians</span>
+    <span>🚗 All Car, Van & 4x4 Tyres Stocked</span>
+    <span>📍 Based at Dalwhinnie PH19 1AF</span>
+  </div>
+
+  <!-- Main Content Container -->
+  <div class="container">
+    
+    <!-- Emergency Services Section -->
+    <h2 class="section-title">24 Hour Roadside Assistance Services</h2>
+    <p class="section-subtitle">Rapid dispatch for emergency punctures, breakdown towing, and roadside repairs on the A9 trunk road and Scottish Highlands.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>🛞 24/7 Mobile Tyre Fitting</h3>
+        <p>Emergency mobile tyre replacement at home, work, or roadside. We fit premium, mid-range, and budget tyres for cars, commercial vans, and 4x4s directly on site across the A9 corridor.</p>
+      </div>
+
+      <div class="card">
+        <h3>🚚 A9 Vehicle Breakdown & Towing</h3>
+        <p>Fast vehicle recovery for broken-down or accident-damaged cars and light commercial vehicles. Safe flatbed transport to local garages, residence, or nationwide destinations.</p>
+      </div>
+
+      <div class="card">
+        <h3>⚡ Mobile Battery Replacement & Jump Start</h3>
+        <p>Flat battery boost and roadside testing. If your vehicle won't start in cold Highland conditions, our mobile van carries brand-new heavy-duty batteries fitted on the spot.</p>
+      </div>
+
+      <div class="card">
+        <h3>⛽ Fuel Drain & Auto Lockout Assistance</h3>
+        <p>Misfueled your car with petrol in diesel or vice versa? We perform mobile fuel draining and non-destructive vehicle unlocking along the A9 route.</p>
+      </div>
+    </div>
+
+    <!-- 1.5 Hour Service Radius / Local SEO Keyword Coverage -->
+    <h2 class="section-title" style="margin-top: 65px;">1.5 Hour Service Area Coverage</h2>
+    <p class="section-subtitle">Stationed strategically at Dalwhinnie PH19 1AF to provide rapid response along the A9, Badenoch and Strathspey, Cairngorms National Park, and Perthshire.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>📍 Dalwhinnie & Drumochter Pass</h3>
+        <p>Immediate callout for breakdown recovery and mobile tyres on the A9 Drumochter Pass, Dalwhinnie PH19, and A889 junction.</p>
+      </div>
+      <div class="card">
+        <h3>📍 Newtonmore & Kingussie</h3>
+        <p>15 to 20 minute response for mobile tyre replacement, puncture repairs, and towing in Newtonmore, Kingussie, and Laggan.</p>
+      </div>
+      <div class="card">
+        <h3>📍 Aviemore & Cairngorms</h3>
+        <p>24/7 roadside assistance in Aviemore, Carrbridge, Boat of Garten, Nethy Bridge, and Grantown-on-Spey.</p>
+      </div>
+      <div class="card">
+        <h3>📍 Pitlochry & Blair Atholl</h3>
+        <p>Rapid emergency callouts down the A9 to Blair Atholl, Killiecrankie, Pitlochry, Dunkeld, and Aberfeldy.</p>
+      </div>
+      <div class="card">
+        <h3>📍 Inverness & Highland South</h3>
+        <p>Mobile tyre fitters covering southern Inverness approach, Daviot, Moy, Tomatin, and Slochd Summit.</p>
+      </div>
+      <div class="card">
+        <h3>📍 Fort William & Spean Bridge</h3>
+        <p>Cross-Highland roadside support covering the A86 route through Roy Bridge, Spean Bridge, and Fort William.</p>
+      </div>
+    </div>
+
+    <!-- Search Keywords Tag Cloud -->
+    <div style="margin-top: 45px; text-align: center;">
+      <h4 style="margin-bottom: 15px; color: #475569;">Popular Local Search Services Covered:</h4>
+      <div class="area-tags">
+        <span class="area-tag">A9 Mobile Tyre Fitting</span>
+        <span class="area-tag">Dalwhinnie Car Recovery</span>
+        <span class="area-tag">Aviemore Emergency Tyres</span>
+        <span class="area-tag">Pitlochry Roadside Towing</span>
+        <span class="area-tag">Kingussie Mobile Tyre Repair</span>
+        <span class="area-tag">Inverness A9 Breakdown Assist</span>
+        <span class="area-tag">Fort William Tyre Service</span>
+        <span class="area-tag">Drumochter Pass Puncture Repair</span>
+        <span class="area-tag">Blair Atholl Tow Truck</span>
+        <span class="area-tag">Perthshire 24/7 Mobile Tyres</span>
+      </div>
+    </div>
+
+    <!-- Urgent Dispatch Call Banner -->
+    <div class="emergency-banner">
+      <h2>Stranded On The Road Right Now?</h2>
+      <p>Speak directly to our emergency dispatch operator for immediate roadside assistance.</p>
+      <a href="tel:+447401320339" class="cta-btn">📞 Call +44 7401 320 339 Now</a>
+    </div>
+
+  </div>
+
+  <!-- Footer with Exact Address & Contact Info -->
+  <footer>
+    <div class="footer-content">
+      
+      <div class="footer-col">
+        <h4>RoadTech Recovery & Mobile Tyres</h4>
+        <p>Your trusted 24/7 roadside breakdown recovery and mobile tyre fitting partner along the A9 trunk road and Scottish Highlands.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Emergency Contact</h4>
+        <p><strong>Hotline:</strong> <a href="tel:+447401320339">+44 7401 320 339</a></p>
+        <p><strong>Hours:</strong> Open 24 Hours / 7 Days A Week</p>
+        <p><strong>Response Radius:</strong> 1.5 Hour Drive Time</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Physical Location / Base Address</h4>
+        <p><strong>RoadTech Recovery & Mobile Tyres</strong></p>
+        <p>WQC8+57, Dalwhinnie PH19 1AF</p>
+        <p>United Kingdom</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 RoadTech Recovery & Mobile Tyres (PH19 1AF). All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
